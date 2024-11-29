@@ -12,7 +12,7 @@ function App() {
     setError(null);
 
     try {
-      const response = await axios.get("http://127.0.0.1:5000/api/recommendations");
+      const response = await axios.get("https://youtube-recommendation-backend-2.onrender.com/api/recommendations");
       setVideos(response.data);
     } catch (err) {
       setError("Error fetching recommendations.");
